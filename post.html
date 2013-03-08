@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-
+<?php
+	if(isset(  $_POST['submit'] ))
+	{
+		require "init.php";
+		
+		extract($_POST);			
+			$query = "INSERT INTO post (title,description,email,phone)
+			VALUES ('$title', '$description','$email','$phone')";
+			mysqli_query($con,$query);
+			header("LOCATION:index.html/#ribbion");
+	}
+?>
 <html>
 <head>																	<!-- head starts here-->
 	<title>LugList</title>
@@ -36,15 +47,14 @@
 						<div class="clear"></div>
 					</div>
 		</div>
+		<form method="post">
 		<div id="content">
 					<div id="post_container">
 						<div class="post">
 							Post title:<br>
-							<input type="text" placeholder="Post's title" name="title" id="title" autocomplete="off">
+							<input type="text" placeholder="Post's title" name="title" id="title" autocomplete="off" >
 							<br>Description:<br>
-							<div id="description" name="description" contenteditable="true" aria-multiline="true" role="textbox" spellcheck="true" dir="ltr" data-focus="false" autocomplete="off">
-								<span>Description..</span><br><br></br>
-							</div>
+							<textarea rows="4" cols="110" placeholder="Description" name="description" id="description" autocomplete="off" maxlength="1000" ></textarea>
 							<br>Email id:<br>
 							<input type="text" placeholder="Email id" name="email" id ="email" autocomplete="off">
 							<br>Phone No:<br>
@@ -54,7 +64,7 @@
 						<div class="clear"></div>
 					
 		</div>
-		
+		</form>
 		<div id="footer">
 		&#169 Lug Labs 2013 
 	
