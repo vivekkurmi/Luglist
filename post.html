@@ -3,8 +3,8 @@
 
 <html>
 <head>																	<!-- head starts here-->
-<title>LugList</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+	<title>LugList</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 
@@ -40,11 +40,16 @@
 					<div id="post_container">
 						<div class="post">
 							Post title:<br>
-							<input type="text" placeholder="Post's title" name="title" id="title">
+							<input type="text" placeholder="Post's title" name="title" id="title" autocomplete="off">
 							<br>Description:<br>
-							<input type="text" placeholder="description" name="description" id="description">
+							<div id="description" name="description" contenteditable="true" aria-multiline="true" role="textbox" spellcheck="true" dir="ltr" data-focus="false" autocomplete="off">
+								<span>Description..</span><br><br></br>
+							</div>
+							<br>Email id:<br>
+							<input type="text" placeholder="Email id" name="email" id ="email" autocomplete="off">
 							<br>Phone No:<br>
-							<input type="text" placeholder="phone no" name="phone no" id="phone no">
+							<input type="text" placeholder="phone no" name="phone" id="phone" autocomplete="off">
+							<input type="submit" value="Post" name="submit" id="submit">
 						</div>
 						<div class="clear"></div>
 					
