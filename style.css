@@ -1,0 +1,256 @@
+body
+{
+	margin:0px;
+	font-family:Arial,sans-serif;
+	background:url(background.png);
+	font-size:14px;
+}
+#top
+{
+	width:1024px;
+	margin:0 auto;
+	position:fixed;
+	left:10%;
+	right:10%;
+	overflow:visible;
+}
+#head
+{
+	width:100%;
+	top:0;
+	padding:20px 0 10px 0;
+}
+#logo
+{
+	width:100%;
+	float:left;
+	font-size:65px;
+	font-family:Georgia;
+	display:block;
+	color:#f8f8f8;
+	text-shadow:0 0 10px #FF0000,0 0 3px #FFFF00;
+	padding-bottom:20px;
+	box-shadow: 0 1.5px 2px -2px gray;
+	border-bottom:1px solid #000;
+	margin-bottom:10px;
+}
+#search
+{
+	float:left;
+	width:100%;
+	border-radius:10px;
+	background:rgba(255,255,255,0.03);
+	height:500px;
+}
+#search span
+{
+font: bolder 6em/125% 'helvetica neue',helvetica,arial,sans-serif;
+letter-spacing: -2px;
+color: rgb(255, 255, 255);
+margin:50px 20px 60px;
+display: block;
+text-align:center;
+text-shadow: 2px 2px rgb(0, 0, 0);
+}
+#search a{
+text-decoration:none;
+}
+#searchbar
+{
+	font-size:35px;
+	width:72%;
+	height:41px;
+	margin:0 1.5% 0 5%;
+	display:inline;
+}
+#searchbutton
+{
+	 width:15%;
+    height:41px;
+    font-size:35px;
+    color:#ffffff;
+    text-align: center;
+    border-top: 1px solid rgb(228, 24, 0);
+    border-bottom: 1px solid rgb(190, 43, 0);
+    border-right: 1px solid rgb(117, 28, 10);
+    background: -moz-linear-gradient(top, #f3c5bd 0%, #e86c57 6%, #ea2803 14%, #ff6600 97%, #c72200 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3c5bd), color-stop(6%,#e86c57), color-stop(14%,#ea2803), color-stop(97%,#ff6600), color-stop(100%,#c72200)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f3c5bd 0%,#e86c57 6%,#ea2803 14%,#ff6600 97%,#c72200 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f3c5bd 0%,#e86c57 6%,#ea2803 14%,#ff6600 97%,#c72200 100%); /* Opera 11.10+ */
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 8px 0px rgb(102, 0, 0), 0px 15px 20px rgba(0, 0, 0, 0.35);
+}
+#searchbutton:hover
+{
+	color:#000000;
+}
+#middle
+{
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	top:475px;
+	left:auto;
+	right:auto;
+}
+#footer
+{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	background:url(background.png);
+	padding:10px;
+	display:block;
+	height:30px;
+	position:relative;
+	color:white;
+	font-size:20px;
+	top:0;
+}
+#menu
+{
+background:#891717;
+width:1044px;
+height:80px;
+padding:3px;
+font-size:30px;
+margin:0px auto;
+border:3px dashed black;
+border-radius:5px;
+}
+#menu_inner
+{
+	float:left;
+	width:100%;
+	height:100%;
+	background:#891717;
+	overflow:hidden; 
+	margin:0 auto;
+}
+.menuicon
+{
+	background:url(menu.png);
+	float:left;
+	width:49.8%;
+	color:white;
+	height:100%;
+	border:none;
+	font-weight:bold;
+	border-left:4px solid #891717;
+	text-align:center;
+	font-size:20px;
+}
+.menuicon span{
+	font: bolder 4.75em/125% 'helvetica neue',helvetica,arial,sans-serif;
+	letter-spacing: -2px;
+	font-size:45px;
+	color:white;
+}
+#browse
+{
+	border-left:none;
+}
+.menuicon:hover span,.menuicon:hover
+{
+	color:#e8e8e8;
+}
+#content
+{
+	width:100%;
+	background :#FaFaFa;
+	font-size:30px;
+	display:inline-block;
+}
+#ribbion
+{
+	float:both;
+	text-align:center;
+	margin:0 auto;
+	padding:5px 0px;
+	background:#FaFaFa;
+	width:1024px;
+	font-size:35px;
+	color:#757575;
+	border-radius:0 0 4px 4px;
+}
+#status
+{
+	margin-bottom:5px;
+	display:inline block;
+	font-size:25px;
+}
+#classified_container
+{
+	float:both;
+	width:1004px;
+	background:#dedede;
+	margin:0 auto;
+	border-radius:4px;
+	padding:15px;
+	margin-bottom:10px;
+}
+#classified_container a{
+	text-decoration:none;
+	font-size:25px;
+	color:#111111;
+}
+#classified_container a:hover{
+color:#5E0390;
+}
+.classified
+{
+	padding:10px;
+	background:white;
+	margin:0 auto 10px;
+	border-radius:2px;
+}
+.classified p{
+color:#555;
+font-size:13px;
+padding:0px;
+margin:-1px 0;
+}
+.classified u{
+color:#333;
+}
+.clear
+{
+	float:both;
+	margin:0;
+	padding:0;
+}
+
+
+
+
+
+#post_middle
+{
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	top:115px;
+	left:auto;
+	right:auto;
+}
+#post_container
+{
+	float:both;
+	width:1004px;
+	background:#dedede;
+	margin:0 auto;
+	border-radius:4px;
+	padding:15px;
+}
+
+.post
+{
+	padding:10px;
+	background:white;
+	margin:0 auto 10px;
+	border-radius:2px;
+}
+.post input{
+	margin-bottom:10px;
+	width:70%;
+}
