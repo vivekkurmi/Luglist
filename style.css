@@ -178,12 +178,6 @@ border-radius:5px;
 	color:#757575;
 	border-radius:0 0 4px 4px;
 }
-#status
-{
-	margin-bottom:5px;
-	display:inline block;
-	font-size:25px;
-}
 #classified_container
 {
 	float:both;
@@ -256,10 +250,17 @@ color:#333;
 	border-radius:2px;
 	color:#2a2a2a;
 	font-size:25px;
+	display:block;
 }
 .post input{
 	margin-bottom:10px;
 	width:80%;
+	display:block;
+}
+.post div
+{
+	float:left;
+	display:inline-block;
 }
 #title{
 margin-top:5px;
@@ -279,25 +280,26 @@ color:#5e5e5e;
 }
 #email
 {
-	margin-top:5px;
+	margin:5px 0 10px 0;
 	height:40px;
 	font-size:25px;
 	color:#5e5e5e;
 	width:400px;
+	display:inline-block;
 }
-#phone
+#contact
 {
 	margin-top:5px;
 	height:40px;
 	font-size:25px;
 	color:#5e5e5e;
 	width:200px;
-	display:inline-block;
 }
 #submit
 {
 	width:70px;
 	height:50px;
 }
+
 	
 
