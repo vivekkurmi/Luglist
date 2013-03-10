@@ -56,13 +56,6 @@ if(isset(  $_POST['submit'] ))
 		</div>
 		<form method="post">
 		<div id="content">
-			<div id="ribbion">
-				<div id="error">
-							<?php
-								echo $message;
-							?>
-						</div>
-			</div>
 					<div id="post_container">
 							<div class="post">
 										Post title:<span style="color:red">*</span><br>
