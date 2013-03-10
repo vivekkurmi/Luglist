@@ -48,7 +48,7 @@ if(isset(  $_POST['submit'] ))
 						<a href="index.php"><div id="browse" class="menuicon"><span>Home</span>
 						<br>Back to home page
 						</div></a>
-						<a href="#"><div id="post" class="menuicon"><span>Browse</span>
+						<a href="browse.php"><div id="post" class="menuicon"><span>Browse</span>
 						<br>Classified by category
 						</div></a>
 						<div class="clear"></div>

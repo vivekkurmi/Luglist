@@ -300,6 +300,30 @@ color:#5e5e5e;
 	width:70px;
 	height:50px;
 }
+#post_container a{
+	text-decoration:none;
+	font-size:25px;
+	color:#111111;
+}
+#post_container a:hover{
+color:#5E0390;
+}
+.post
+{
+	padding:10px;
+	background:white;
+	margin:0 auto 10px;
+	border-radius:2px;
+}
+.post p{
+color:#555;
+font-size:13px;
+padding:0px;
+margin:-1px 0;
+}
+.post u{
+color:#333;
+}
 
 	
 
