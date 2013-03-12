@@ -65,6 +65,7 @@
 								$str=$_POST["search"];
 								$str=$str." ";
 								$output2="";
+								$output="";
 								$j=0;
 								for($i=0;$i<strlen($str);$i++)
 								{
