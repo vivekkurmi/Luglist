@@ -55,6 +55,8 @@
 							if(isset($_POST["search"])&&($_POST["search"]!=""))
 							{ 
 								echo '<div id="content">
+								<div id="promo">
+								</div>
 					<div id="ribbion">
 						<img src="arrowdown.png" style="align:left;border-radius:10px;" width="30px" height="30px"/>
 						<span>Scroll down to view search results</span>
@@ -133,6 +135,8 @@
 							{	
 								echo '
 								<div id="content">
+								<div id="promo">
+								</div>
 					<div id="ribbion">
 						<img src="arrowdown.png" style="align:left;border-radius:10px;" width="30px" height="30px"/>
 						<span>Scroll down to view classifieds</span>

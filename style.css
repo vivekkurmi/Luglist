@@ -324,6 +324,14 @@ margin:-1px 0;
 .post u{
 color:#333;
 }
+#promo{
+margin:20px 0 5px 10px;
+float:left;
+width:120px;
+height:650px;
+display:inline-block;
+background:#fff;
+}
 
 	
 
