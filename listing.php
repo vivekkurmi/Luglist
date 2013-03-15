@@ -38,9 +38,6 @@
 		<div id="content">
 			<div id="ribbion">
 				<div id="error">
-							<?php
-								echo $message;
-							?>
 						</div>
 			</div>
 					<div id="post_container">
@@ -50,6 +47,7 @@
 								$id = $_GET['id']; // I got this from the URL
 								$res = mysqli_query($con,"Select * from post where post_id = ".$id);
 								$row= mysqli_fetch_array($res);
+								date_default_timezone_set('Asia/Kolkata');
 								$unix=strtotime($row['time']."GMT");
 								$tim=date("jS \of F Y",$unix);
 								echo  '<span style="font-size:40px;color:black">'.$row['title'].'</span><p style="font-size:32px;color:0f0f0f">'.$row['description'].'</p>

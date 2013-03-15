@@ -117,7 +117,7 @@
 							{	echo '<div style="text-align:center;padding:1px;font-size:30px"><img src="error.png" text-align="right" width="31px" height="31px">&nbspNo match found<br><span style="color:#757575;font-size:25px">Recently posted classifieds:</span></div>';
 								$res=mysqli_query($con,"select * from post order by time desc limit 50")
 								or die(mysqli_error($con));
-								
+								date_default_timezone_set('Asia/Kolkata');
 								while ($row=mysqli_fetch_array($res))
 								{
 									$unix=strtotime($row['time']."GMT");

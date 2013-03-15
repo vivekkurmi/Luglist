@@ -10,6 +10,7 @@ if(isset(  $_POST['submit'] ))
 										$message="Please enter valid data";
 										else
 										{
+										date_default_timezone_set('Asia/Kolkata');
 										$var=time();
 										$var2=gmdate("Y-m-d H:i:s", $var);
 										$query = "INSERT INTO post (title,description,email,category,contact,time)
