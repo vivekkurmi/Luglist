@@ -332,6 +332,34 @@ height:650px;
 display:inline-block;
 background:#fff;
 }
+ol.timeline
+{ 
+list-style:none;
+margin:0px;
+}
+ol.timeline li
+{ 
+position:relative;
+}
+ol.timeline div
+{
+	margin-left:-40px;
+}
+.morebox
+{
+font-weight:bold;
+color:#333333;
+text-align:center;
+border:solid 1px #333333;
+padding:8px;
+margin-top:8px;
+margin-bottom:8px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+background:#fff;
+}
+.morebox a{ color:#333333; text-decoration:none}
+.morebox a:hover{ color:#333333; text-decoration:none}
 
 	
 

@@ -5,38 +5,6 @@
 <head>																<!-- head starts here-->
 	<title>LugList</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="jquery-1.4.1.min.js"></script>
-	<!--pagenation script starts here-->
-	<script type="text/javascript">
-	$(function() 
-	{
-		$('.more').live("click",function() 
-		{
-			var ID = $(this).attr("id");
-			if(ID>1)
-			{
-				$("#more"+ID).html('<img src="moreajax.gif" />');
-
-				$.ajax({
-				type: "POST",
-				url: "ajax_more.php",
-				data: "lastmsg="+ ID, 
-				cache: false,
-				success: function(html){
-				$("ol#updates").append(html);
-				$("#more"+ID).remove(); // removing old more button
-				}
-				});
-			}
-			else
-			{
-			$("#more"+ID).remove();// no results
-			}
-
-			return false;
-		});
-	});
-	</script>
 </head>
 
 
@@ -169,32 +137,22 @@
 								<div id="content">
 								<div id="promo">
 								</div>
-								<div id="ribbion">
-									<img src="arrowdown.png" style="align:left;border-radius:10px;" width="30px" height="30px"/>
-									<span>Scroll down to view classifieds</span>
-								</div>
-								<div id="classified_container">
-								<ol class="timeline" id="updates">'; //to display results in an ordered form;
-								$res=mysqli_query($con,"select * from post order by time desc limit 5")
+					<div id="ribbion">
+						<img src="arrowdown.png" style="align:left;border-radius:10px;" width="30px" height="30px"/>
+						<span>Scroll down to view classifieds</span>
+					</div>
+					<div id="classified_container">';
+								$res=mysqli_query($con,"select * from post order by time desc")
 								or die(mysqli_error($con));
 								
 								while ($row=mysqli_fetch_array($res))
 								{
-									$msg_id=$row['post_id'];
 									$unix=strtotime($row['time']."GMT");
 									$tim=date("jS \of F Y",$unix);
-									echo '<li><a href="listing.php?id='.$row['post_id'].'"><div class="classified">'.$row['title'].'<p>
+									echo '<a href="listing.php?id='.$row['post_id'].'"><div class="classified">'.$row['title'].'<p>
 										<u>posted on</u>:'.$tim.' at '.date('H:i:s', $unix).'&nbsp<u>under</u>:'.$row['category'].'</p>
-										</div></a></li>';
+										</div></a>';
 								}
-								echo '</ol>';
-								?>
-								<!--the paganation box code-->
-								<div id="more<?php echo $msg_id; ?>" class="morebox">
-								<a href="#" id="<?php echo $msg_id; ?>" class="more">more</a>
-								</div>
-								<?php
-
 							}
 						?>
 					</div>
