@@ -1,6 +1,7 @@
 body
 {
-	margin:0px;
+	margin:0;
+	padding:0;
 	font-family:Arial,sans-serif;
 	background:url(background.png);
 	font-size:14px;
@@ -240,6 +241,8 @@ color:#333;
 	margin:0 auto;
 	border-radius:4px;
 	padding:15px;
+	margin-bottom:10px;
+	margin-top:10px;
 }
 
 .post
@@ -350,16 +353,19 @@ ol.timeline div
 font-weight:bold;
 color:#333333;
 text-align:center;
-border:solid 1px #333333;
 padding:8px;
-margin-top:8px;
-margin-bottom:8px;
--moz-border-radius: 6px;
--webkit-border-radius: 6px;
-background:#fff;
+margin-top:30px;
+margin-bottom:10px;
+border-radius:10px;
+background: -moz-linear-gradient(top, #f3c5bd 0%, #e86c57 6%, #ea2803 14%, #ff6600 97%, #c72200 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3c5bd), color-stop(6%,#e86c57), color-stop(14%,#ea2803), color-stop(97%,#ff6600), color-stop(100%,#c72200)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f3c5bd 0%,#e86c57 6%,#ea2803 14%,#ff6600 97%,#c72200 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f3c5bd 0%,#e86c57 6%,#ea2803 14%,#ff6600 97%,#c72200 100%); /* Opera 11.10+ */
 }
-.morebox a{ color:#333333; text-decoration:none}
-.morebox a:hover{ color:#333333; text-decoration:none}
+.morebox a
+{ color:#333333; text-decoration:none}
+.morebox a:hover
+{ color:#333333; text-decoration:none}
 
 	
 
